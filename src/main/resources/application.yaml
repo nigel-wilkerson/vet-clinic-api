@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: vet-clinic
+  datasource:
+    url: jdbc:postgresql://localhost:5333/vet_clinic
+    username: vetadmin
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+server:
+  port: 8081
